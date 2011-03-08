@@ -131,7 +131,7 @@ Others >
     %%  A literal '%' character                                              %
 
 ==============================================================================
-3. Ruby                                                         *strftime-ruby*
+3. Ruby                                                        *strftime-ruby*
 
 Times >
     %H  Hour (24-hour clock) as a decimal number                      00 to 23
