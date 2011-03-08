@@ -3,67 +3,12 @@
 ==============================================================================
 CONTENTS                                             *strftimedammit-contents*
 
-    1. Python .......................... |strftime-python|
-    2. Django .......................... |strftime-django|
+    1. Django .......................... |strftime-django|
+    2. Python .......................... |strftime-python|
     3. Ruby   .......................... |strftime-ruby|
 
 ==============================================================================
-1. Python                                                    *strftime-python*
-
-Times >
-    %H  Hour (24-hour clock) as a decimal number                      00 to 23
-    %I  Hour (12-hour clock) as a decimal number                      01 to 12
-
-    %M  Minute as a decimal number                                    00 to 59
-    %S  Second as a decimal number                                    00 to 61
-
-    %p  Locale's equivalent of either AM or PM                              AM
-<
-
-Days >
-    %a  Abbreviated weekday name                                           Wed
-    %A  Full weekday name                                            Wednesday
-
-    %d  Day of the month as a decimal number                          01 to 31
-    %j  Day of the year as a decimal number                         001 to 366
-
-    %w  Weekday as a decimal number                            0 (Sunday) to 6
-<
-
-Months >
-    %b  Abbreviated month name                                             Oct
-    %B  Full month name                                                October
-
-    %m  Month as a decimal number                                     01 to 12
-<
-
-Weeks >
-    %U  Week number of the year (Sunday as the first day of the       00 to 53
-        week) as a decimal number. All days in a new year
-        preceding the first Sunday are considered to be in week 0.
-
-    %W  Week number of the year (Monday as the first day of the       00 to 53
-        week) as a decimal number. All days in a new year
-        preceding the first Monday are considered to be in week 0.
-<
-
-Years >
-    %y  Year without century as a decimal number                            11
-    %Y  Year with century as a decimal number                             2011
-<
-
-Combinations >
-    %x  Locale's appropriate date representation
-    %X  Locale's appropriate time representation
-    %c  Locale's appropriate date and time representation
-<
-
-Others >
-    %Z  Time zone name (no characters if no time zone exists)
-    %%  A literal '%' character                                              %
-<
-==============================================================================
-2. Django                        *strftime-django* *django-date* *django-time*
+1. Django                        *strftime-django* *django-date* *django-time*
 
 Times >
     H  Hour, 24-hour format                                           00 to 23
@@ -143,6 +88,61 @@ Others >
     L  Boolean for whether it's a leap year                      True or False
 <
 ==============================================================================
+2. Python                                                    *strftime-python*
+
+Times >
+    %H  Hour (24-hour clock) as a decimal number                      00 to 23
+    %I  Hour (12-hour clock) as a decimal number                      01 to 12
+
+    %M  Minute as a decimal number                                    00 to 59
+    %S  Second as a decimal number                                    00 to 61
+
+    %p  Locale's equivalent of either AM or PM                              AM
+<
+
+Days >
+    %a  Abbreviated weekday name                                           Wed
+    %A  Full weekday name                                            Wednesday
+
+    %d  Day of the month as a decimal number                          01 to 31
+    %j  Day of the year as a decimal number                         001 to 366
+
+    %w  Weekday as a decimal number                            0 (Sunday) to 6
+<
+
+Months >
+    %b  Abbreviated month name                                             Oct
+    %B  Full month name                                                October
+
+    %m  Month as a decimal number                                     01 to 12
+<
+
+Weeks >
+    %U  Week number of the year (Sunday as the first day of the       00 to 53
+        week) as a decimal number. All days in a new year
+        preceding the first Sunday are considered to be in week 0.
+
+    %W  Week number of the year (Monday as the first day of the       00 to 53
+        week) as a decimal number. All days in a new year
+        preceding the first Monday are considered to be in week 0.
+<
+
+Years >
+    %y  Year without century as a decimal number                            11
+    %Y  Year with century as a decimal number                             2011
+<
+
+Combinations >
+    %x  Locale's appropriate date representation
+    %X  Locale's appropriate time representation
+    %c  Locale's appropriate date and time representation
+<
+
+Others >
+    %Z  Time zone name (no characters if no time zone exists)
+    %%  A literal '%' character                                              %
+<
+==============================================================================
 3. Ruby                                                         *strftime-ruby*
 
 Times >
@@ -152,9 +152,9 @@ Times >
     %M  Minute of the hour                                            00 to 59
     %S  Second of the minute                                          00 to 61
 
-    %T time, 24-hour (%H:%M:%S)                                       15:39:09
-    %r time, 12-hour (%I:%M:%S %p)                                 03:39:09 PM
-    %R time, 24-hour (%H:%M)                                             15:39
+    %T  time, 24-hour (%H:%M:%S)                                      15:39:09
+    %r  time, 12-hour (%I:%M:%S %p)                                03:39:09 PM
+    %R  time, 24-hour (%H:%M)                                            15:39
 
     %p  Meridian indicator in uppercase                               AM or PM
     %P  Meridian indicator in lowercase                               am or pm
