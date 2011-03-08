@@ -4,6 +4,8 @@ formatting characters for a variety of languages.
 It was born when I finally got sick of having to open a browser with the
 Django docs to look up how to use its date formatting template filter.
 
+![Screenshot](http://i.imgur.com/CIvqB.png)
+
 Usage
 -----
 
