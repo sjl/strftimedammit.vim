@@ -26,7 +26,6 @@ Times >
 
     f  Time, in 12-hour hours and minutes, with minutes                1, 1:30
        left off if they're zero 
-<
 
 Days >
     z  Day of the year                                                0 to 365
@@ -39,7 +38,6 @@ Days >
     w  Day of the week, digits without leading zeros           0 (Sunday) to 6
 
     S  English ordinal suffix for day of the month              st, nd, rd, th
-<
 
 Months >
     m  Month, 2 digits with leading zeros                             01 to 12
@@ -53,16 +51,13 @@ Months >
     E  Month, locale specific alternative representation
        usually used for long date representation.
        'listopada' (for Polish locale, as opposed to 'Listopad')
-<
 
 Weeks >
     W  ISO-8601 week number of year, with weeks starting on Monday       1, 53
-<
 
 Years >
     y  Year, 2 digits                                                       99
     Y  Year, 4 digits                                                     1999
-<
 
 Combinations >
     c  ISO 8601 Format                              2008-01-02T10:30:00.000123
@@ -74,7 +69,6 @@ Combinations >
        appropriate
 
     O  Difference to Greenwich time in hours                             +0200
-<
 
 Others >
     Z  Time zone offset in seconds. The offset for timezones
@@ -86,7 +80,7 @@ Others >
     T  Time zone of this machine                                           EST
     t  Number of days in the given month                              28 to 31
     L  Boolean for whether it's a leap year                      True or False
-<
+
 ==============================================================================
 2. Python                                                    *strftime-python*
 
@@ -98,7 +92,6 @@ Times >
     %S  Second as a decimal number                                    00 to 61
 
     %p  Locale's equivalent of either AM or PM                              AM
-<
 
 Days >
     %a  Abbreviated weekday name                                           Wed
@@ -108,14 +101,12 @@ Days >
     %j  Day of the year as a decimal number                         001 to 366
 
     %w  Weekday as a decimal number                            0 (Sunday) to 6
-<
 
 Months >
     %b  Abbreviated month name                                             Oct
     %B  Full month name                                                October
 
     %m  Month as a decimal number                                     01 to 12
-<
 
 Weeks >
     %U  Week number of the year (Sunday as the first day of the       00 to 53
@@ -125,23 +116,20 @@ Weeks >
     %W  Week number of the year (Monday as the first day of the       00 to 53
         week) as a decimal number. All days in a new year
         preceding the first Monday are considered to be in week 0.
-<
 
 Years >
     %y  Year without century as a decimal number                            11
     %Y  Year with century as a decimal number                             2011
-<
 
 Combinations >
     %x  Locale's appropriate date representation
     %X  Locale's appropriate time representation
     %c  Locale's appropriate date and time representation
-<
 
 Others >
     %Z  Time zone name (no characters if no time zone exists)
     %%  A literal '%' character                                              %
-<
+
 ==============================================================================
 3. Ruby                                                         *strftime-ruby*
 
@@ -158,7 +146,6 @@ Times >
 
     %p  Meridian indicator in uppercase                               AM or PM
     %P  Meridian indicator in lowercase                               am or pm
-<
 
 Days >
     %a  Abbreviated weekday name                                           Wed
@@ -168,14 +155,12 @@ Days >
     %j  Day of the year as a decimal number                         001 to 366
 
     %w  Weekday as a decimal number                            0 (Sunday) to 6
-<
 
 Months >
     %b  Abbreviated month name                                             Oct
     %B  Full month name                                                October
 
     %m  Month as a decimal number                                     01 to 12
-<
 
 Weeks >
     %U  Week number of the year (Sunday as the first day of the       00 to 53
@@ -185,24 +170,21 @@ Weeks >
     %W  Week number of the year (Monday as the first day of the       00 to 53
         week) as a decimal number. All days in a new year
         preceding the first Monday are considered to be in week 0.
-<
 
 Years >
     %y  Year without century as a decimal number                            11
     %Y  Year with century as a decimal number                             2011
     %C  Century                                                             20
-<
 
 Combinations >
     %x  Locale's date representation, no time                         03/08/11
     %X  Locale's time representation, no date                         15:44:30
     %c  Locale's date and time representation         Tue Mar  8 15:44:59 2011
     %F  %Y-%m-%d (ISO 8601 date format)                             2011-03-08
-<
 
 Others >
     %Z  Time zone name (no characters if no time zone exists)              EST
     %z  Time zone as hour offset from UTC                                -0500
     %s  Seconds since 1970-01-01 00:00:00 UTC (the Epoch)           1299616963
     %%  A literal '%' character                                              %
-<
+
