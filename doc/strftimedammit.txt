@@ -62,7 +62,7 @@ Others >
     %%  A literal '%' character                                              %
 <
 ==============================================================================
-1. Django                        *strftime-django* *django-date* *django-time*
+2. Django                        *strftime-django* *django-date* *django-time*
 
 Times >
     H  Hour, 24-hour format                                           00 to 23
