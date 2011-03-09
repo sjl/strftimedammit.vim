@@ -4,8 +4,9 @@
 CONTENTS                                             *strftimedammit-contents*
 
     1. Django .......................... |strftime-django|
-    2. Python .......................... |strftime-python|
-    3. Ruby   .......................... |strftime-ruby|
+    2. Perl   .......................... |strftime-perl|
+    3. Python .......................... |strftime-python|
+    4. Ruby   .......................... |strftime-ruby|
 
 ==============================================================================
 1. Django                        *strftime-django* *django-date* *django-time*
@@ -82,7 +83,62 @@ Others >
     L  Boolean for whether it's a leap year                      True or False
 
 ==============================================================================
-2. Python                                                    *strftime-python*
+2. Perl                                                        *strftime-perl*
+
+Note: You need to import strftime from Perl's POSIX module >
+    use POSIX qw/strftime/;
+<
+
+Since Perl relies on the POSIX C function, I'm only mentioning portable choices,
+as per http://perltraining.com.au/tips/2009-02-26.html. (Well, actually I added
+%F because I can't live without it.)
+
+Times >
+    %H  Hour (24-hour clock) as a decimal number                      00 to 23
+    %I  Hour (12-hour clock) as a decimal number                      01 to 12
+
+    %M  Minute of the hour                                            00 to 59
+    %S  Second of the minute                                          00 to 61
+
+    %p  Locale dependent strings for 'AM' and 'PM'                    AM or PM
+
+Days >
+    %a  Abbreviated weekday name                                           Wed
+    %A  Full weekday name                                            Wednesday
+
+    %d  Day of the month as a decimal number                          01 to 31
+    %j  Day of the year as a decimal number                         001 to 366
+
+    %w  Weekday as a decimal number                            0 (Sunday) to 6
+
+Months >
+    %b  Abbreviated month name                                             Oct
+    %B  Full month name                                                October
+
+    %m  Month as a decimal number                                     01 to 12
+
+Weeks >
+    %U  Week number of the year (Sunday as the first day of the       00 to 53
+        week) as a decimal number. All days in a new year
+        preceding the first Sunday are considered to be in week 0.
+
+    %W  Week number of the year (Monday as the first day of the       00 to 53
+        week) as a decimal number. All days in a new year
+        preceding the first Monday are considered to be in week 0.
+
+Years >
+    %y  Year without century as a decimal number                            11
+    %Y  Year with century as a decimal number                             2011
+
+Combinations >
+    %F  %Y-%m-%d (ISO 8601 date format)                             2011-03-08
+
+Others >
+    %s  Seconds since 1970-01-01 00:00:00 UTC (the Epoch)           1299616963
+    %%  A literal '%' character                                              %
+
+==============================================================================
+3. Python                                                    *strftime-python*
 
 Times >
     %H  Hour (24-hour clock) as a decimal number                      00 to 23
@@ -131,7 +187,7 @@ Others >
     %%  A literal '%' character                                              %
 
 ==============================================================================
-3. Ruby                                                        *strftime-ruby*
+4. Ruby                                                        *strftime-ruby*
 
 Times >
     %H  Hour (24-hour clock) as a decimal number                      00 to 23
@@ -187,4 +243,3 @@ Others >
     %z  Time zone as hour offset from UTC                                -0500
     %s  Seconds since 1970-01-01 00:00:00 UTC (the Epoch)           1299616963
     %%  A literal '%' character                                              %
-
