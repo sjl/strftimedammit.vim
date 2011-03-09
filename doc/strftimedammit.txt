@@ -25,7 +25,7 @@ Times >
     u  Microseconds                                                0 to 999999
 
     f  Time, in 12-hour hours and minutes, with minutes                1, 1:30
-       left off if they're zero 
+       left off if they're zero
 
 Days >
     z  Day of the year                                                0 to 365
