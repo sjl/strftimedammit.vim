@@ -4,6 +4,14 @@ formatting characters for a variety of languages.
 It was born when I finally got sick of having to open a browser with the
 Django docs to look up how to use its date formatting template filter.
 
+Languages/libraries included so far:
+
+* Django
+* Java (Joda)
+* Perl
+* Python
+* Ruby
+
 ![Screenshot](http://i.imgur.com/CIvqB.png)
 
 Usage
@@ -16,11 +24,11 @@ the new documentation file.
 
 Now you can use `:help strftimedammit` to open the documentation.
 
-There are also tags in place for each language, so you can do
-`:help strftime-python` or `:help strftime-django` to go right to that
-section.
+There are also tags in place for each language, so you can do `:help
+strftime-python` or `:help strftime-django` to go right to that section.
 
 Contributing
 ------------
 
-Add your favorite language to the doc file, fork, and send a pull request.
+Add your favorite language or library to the doc file, fork, and send a pull
+request.
