@@ -4,9 +4,10 @@
 CONTENTS                                             *strftimedammit-contents*
 
     1. Django .......................... |strftime-django|
-    2. Perl   .......................... |strftime-perl|
-    3. Python .......................... |strftime-python|
-    4. Ruby   .......................... |strftime-ruby|
+    2. Java (Joda) ..................... |strftime-java-joda|
+    3. Perl   .......................... |strftime-perl|
+    4. Python .......................... |strftime-python|
+    5. Ruby   .......................... |strftime-ruby|
 
 ==============================================================================
 1. Django                        *strftime-django* *django-date* *django-time*
@@ -83,7 +84,52 @@ Others >
     L  Boolean for whether it's a leap year                      True or False
 
 ==============================================================================
-2. Perl                                                        *strftime-perl*
+2. Java (Joda)                            *strftime-java-joda* *strftime-joda*
+
+Times >
+    H  Hour, 24-hour format                                                  0
+
+    h  Hour, 12-hour format                                                 12
+    a  AM or PM                                                             PM
+
+    m  Minute of hour                                                       30
+    s  Second of minute                                                     55
+    S  Fraction of second                                                  978
+
+    K  Hour, 12-hour format, indexed from 0 (0-11)                           0
+    k  Hour, 24-hour format, indexed from 1 (1-24)                          24
+
+Days >
+    d  Day of month                                                         10
+
+    e  Day of week, numeric                                                  2
+    E  Day of week, textual                                       Tuesday; Tue
+
+    D  Day of year                                                         189
+
+Months >
+    M  Month of year                                             July; Jul; 07
+
+Weeks >
+    w  Week number of year                                                  27
+    x  "Weekyear", whatever the hell that means                           1996
+
+Years >
+    y  Year                                                               1996
+
+    G  Era                                                                  AD
+    Y  Year of era (>=0)                                                  1996
+    C  Century of era (>=0)                                                 20
+
+Others >
+    z  Time zone                                    Pacific Standard Time; PST
+    Z  Time zone offset/id                  -0800; -08:00; America/Los_Angeles
+
+    '  Escape for text
+    '' Single quote                                                          '
+
+==============================================================================
+3. Perl                                                        *strftime-perl*
 
 Note: You need to import strftime from Perl's POSIX module >
     use POSIX qw/strftime/;
@@ -138,7 +184,7 @@ Others >
     %%  A literal '%' character                                              %
 
 ==============================================================================
-3. Python                                                    *strftime-python*
+4. Python                                                    *strftime-python*
 
 Times >
     %H  Hour (24-hour clock) as a decimal number                      00 to 23
@@ -187,7 +233,7 @@ Others >
     %%  A literal '%' character                                              %
 
 ==============================================================================
-4. Ruby                                                        *strftime-ruby*
+5. Ruby                                                        *strftime-ruby*
 
 Times >
     %H  Hour (24-hour clock) as a decimal number                      00 to 23
